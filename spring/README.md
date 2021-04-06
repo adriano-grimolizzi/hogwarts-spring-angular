@@ -1,0 +1,3 @@
+# hogwarts-server
+Just a simple Spring Boot application with Generic Controllers, DAOs, services...    
+Link to UI side PR: https://github.com/adriano-grimolizzi/hogwarts-ui

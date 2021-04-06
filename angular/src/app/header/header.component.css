@@ -1,0 +1,23 @@
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding-left: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+p {
+  font-size: 20px;
+  margin: 5px 30px 5px 10px;
+  cursor: pointer;
+}
+
+.header-container {
+  border: solid black 2.5px;
+  box-shadow: 5px 5px 5px grey;
+  margin-bottom: 8px;
+  background-color: white;
+}
+
+.nav-bar {
+  display: flex;
+}

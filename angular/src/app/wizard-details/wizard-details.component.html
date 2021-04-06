@@ -1,0 +1,44 @@
+<div class="details-container">
+  <p>{{title}}</p>
+
+  <div *ngFor="let formElement of formElementList">
+
+    <label class="label">{{ formElement.label }}:</label>
+
+    <span *ngIf="!isEditEnabled; else elseBlock">
+      {{ wizard[formElement.wizardElementName] }}
+    </span>
+
+    <ng-template #elseBlock>
+      <!--  Type of the form: INPUT-->
+      <span *ngIf="formElement.type === 'text'">
+        <input [(ngModel)]="wizard[formElement.wizardElementName]"
+               placeholder="{{ formElement.placeholder }}"/></span>
+      <!--  Type of the form: CHECKBOX-->
+      <span *ngIf="formElement.type === 'checkbox'">
+        <input type="checkbox"
+             [(ngModel)]="wizard[formElement.wizardElementName]"></span>
+    </ng-template>
+  </div>
+</div>
+
+<div *ngIf="isInCreateMode"
+     class="details-button"
+     (click)="onSave()">
+  <p>Create wizard!</p>
+</div>
+
+<div *ngIf="isInDisplayEditMode"
+     style="display:flex">
+
+  <div class="details-button"
+       (click)="onDisplayEdit()">
+    <p>{{ displayOrEditButtonText }}</p>
+  </div>
+
+  <div class="details-button"
+       (click)="onDelete()">
+    <p>Delete Wizard</p>
+  </div>
+</div>
+

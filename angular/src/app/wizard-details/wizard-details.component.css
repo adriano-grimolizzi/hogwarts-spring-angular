@@ -1,0 +1,26 @@
+.details-container {
+  width: 360px;
+  border: solid black 2.5px;
+  border-radius: 16px;
+  margin-top: 10px;
+  margin-left: 5px;
+  box-shadow: 2px 2px 2px grey;
+  background-color: whitesmoke;
+}
+
+.details-button {
+  width: 160px;
+  border: solid black 2.5px;
+  border-radius: 16px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px grey;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+/* TODO: put it in app.component.css */
+label {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-left: 4px;
+}

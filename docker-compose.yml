@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  angular:
+    build: ./angular
+    ports:
+      - "4200:4200"
+  spring:
+    build: ./spring
+    ports:
+      - "8080:8080"

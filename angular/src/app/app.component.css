@@ -1,0 +1,10 @@
+::ng-deep p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+}

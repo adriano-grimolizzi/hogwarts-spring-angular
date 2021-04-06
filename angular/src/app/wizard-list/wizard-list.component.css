@@ -1,0 +1,17 @@
+.wizard-item {
+  width: 180px;
+  border: solid black 2.5px;
+  border-radius: 16px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px grey;
+  cursor: pointer;
+}
+
+.wizard-list-container {
+  border: solid red 2.5px;
+  border-radius: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px grey;
+  background-color: white;
+}

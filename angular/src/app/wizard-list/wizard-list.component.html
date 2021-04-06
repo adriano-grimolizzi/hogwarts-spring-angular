@@ -1,0 +1,10 @@
+<!-- <div class="wizard-list-container"
+     *ngIf="wizards.length != 0"> -->
+<div class="wizard-list-container">
+
+	<div class="wizard-item"
+       *ngFor="let wizard of wizards"
+       routerLink="/wizards/detail/{{wizard.id}}">
+		<p>{{ wizard.name }} {{ wizard.surname }}</p>
+	</div>
+</div>
